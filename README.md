@@ -11,7 +11,6 @@ Dataset: https://opendata.bristol.gov.uk/datasets/bcc::public-toilets
 - [Testing](05-testing.md)
 
 ## Running locally
-This is a static site with no build step or backend.
+This is a static site with no build step or backend. Clone the repo and open index.html directly in a browser — or just visit the live version at https://stewart307.github.io/bristol-toilet-finder/.
 
-
-Then open `https://stewart307.github.io/bristol-toilet-finder/`. The app calls the Bristol Open Data ArcGIS endpoint directly from the browser, so an internet connection is needed to see live data.
+The app calls the Bristol Open Data ArcGIS endpoint directly from the browser, so an internet connection is needed to see live data.
