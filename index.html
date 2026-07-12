@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bristol Public Toilets Finder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="app-header">
+  <h1>Bristol Public Toilets Finder</h1>
+</header>
+
+<main class="app-main">
+  <section class="controls" aria-label="Filters and actions">
+    <button id="refreshBtn" class="refresh-btn" type="button">&#8635; Refresh Data</button>
+
+    <div class="filter-group">
+      <label for="areaFilter">Filter by Area</label>
+      <select id="areaFilter">
+        <option value="">All Areas</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="accessFilter">Accessibility</label>
+      <select id="accessFilter">
+        <option value="">All Toilets</option>
+        <option value="disabled">Wheelchair Accessible</option>
+        <option value="baby">Baby Changing Available</option>
+      </select>
+    </div>
+
+    <p id="lastUpdated" class="last-updated"></p>
+  </section>
+
+  <section class="results" aria-label="Toilet list">
+    <p id="statusMessage" class="status-message" hidden></p>
+    <table id="toiletTable">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Address</th>
+          <th scope="col">Area</th>
+          <th scope="col">Opening Hours</th>
+          <th scope="col">Accessible</th>
+          <th scope="col">Baby Change</th>
+        </tr>
+      </thead>
+      <tbody id="toiletTableBody">
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer class="app-footer">
+  <p>Data source: Bristol Open Data &mdash; Public Toilets dataset (Bristol City Council)</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
